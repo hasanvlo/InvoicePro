@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="FB.com/Hasanvlo">
     <meta name="description" content="InvoicePro Profile - Manage your account settings, company details, and invoice preferences.">
-    <meta name="keywords" content="invoice generator, profile settings, company details, invoice preferences">
+    <meta name="keywords" content="invoice generator, profile settings, account management, invoice preferences">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Profile Settings - InvoicePro">
-    <meta property="og:description" content="Manage your InvoicePro account settings, company details, and invoice preferences.">
+    <meta property="og:title" content="Profile Settings - InvoicePro Free Invoice Generator">
+    <meta property="og:description" content="Manage your account settings and invoice preferences.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hasanvlo.github.io/InvoicePro/profile.html">
-    <title>Profile Settings - InvoicePro</title>
+    <title>Profile Settings - InvoicePro Free Invoice Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,18 +39,6 @@
     <section class="profile-section container">
         <div class="profile-container">
             <div class="profile-sidebar">
-                <div class="profile-header">
-                    <div class="profile-avatar">
-                        <img src="https://via.placeholder.com/150" alt="Profile Picture" id="profilePicture">
-                        <label for="avatarInput" class="avatar-upload">
-                            <i class="fas fa-camera"></i>
-                        </label>
-                        <input type="file" id="avatarInput" accept="image/*" style="display: none;">
-                    </div>
-                    <h2 id="profileName">John Doe</h2>
-                    <p id="profileEmail">john@example.com</p>
-                </div>
-                
                 <div class="profile-menu">
                     <a href="#profile" class="active">Profile Settings</a>
                     <a href="#company">Company Details</a>
@@ -61,122 +49,82 @@
             </div>
             
             <div class="profile-content">
-                <!-- Profile Settings Section -->
-                <div class="profile-section-block active" id="profileSection">
-                    <h2>Profile Settings</h2>
-                    <form class="profile-form" id="profileForm">
+                <div class="profile-header">
+                    <h1>Profile Settings</h1>
+                    <p>Manage your account information and preferences</p>
+                </div>
+                
+                <form id="profileForm" class="profile-form">
+                    <div class="form-section">
+                        <h2>Personal Information</h2>
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" required>
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
                         </div>
+                        
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
+                        
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control">
+                            <input type="tel" id="phone" name="phone">
                         </div>
-                        <button type="submit" class="btn">Save Changes</button>
-                    </form>
-                </div>
-                
-                <!-- Company Details Section -->
-                <div class="profile-section-block" id="companySection">
-                    <h2>Company Details</h2>
-                    <form class="profile-form" id="companyDetailsForm">
+                    </div>
+                    
+                    <div class="form-section">
+                        <h2>Company Details</h2>
                         <div class="form-group">
                             <label for="companyName">Company Name</label>
-                            <input type="text" id="companyName" class="form-control" required>
+                            <input type="text" id="companyName" name="companyName">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="companyLogo">Company Logo</label>
-                            <input type="file" id="companyLogoInput" class="form-control" accept="image/*">
-                            <img src="" alt="Company Logo" id="companyLogoPreview" style="display: none; max-width: 200px; margin-top: 10px;">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="companyAddress">Company Address</label>
-                            <textarea id="companyAddress" class="form-control" rows="3" required></textarea>
-                        </div>
+                        
                         <div class="form-group">
                             <label for="taxNumber">Tax Number</label>
-                            <input type="text" id="taxNumber" class="form-control">
+                            <input type="text" id="taxNumber" name="taxNumber">
                         </div>
-                        <button type="submit" class="btn">Save Company Details</button>
-                    </form>
-                </div>
-                
-                <!-- Billing Information Section -->
-                <div class="profile-section-block" id="billingSection">
-                    <h2>Billing Information</h2>
-                    <form class="profile-form" id="billingForm">
+                    </div>
+                    
+                    <div class="form-section">
+                        <h2>Invoice Preferences</h2>
                         <div class="form-group">
-                            <label for="billingAddress">Billing Address</label>
-                            <textarea id="billingAddress" class="form-control" rows="3" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="paymentMethod">Preferred Payment Method</label>
-                            <select id="paymentMethod" class="form-control" required>
-                                <option value="bank">Bank Transfer</option>
-                                <option value="card">Credit Card</option>
-                                <option value="paypal">PayPal</option>
+                            <label for="currency">Default Currency</label>
+                            <select id="currency" name="currency">
+                                <option value="USD">USD ($)</option>
+                                <option value="EUR">EUR (€)</option>
+                                <option value="GBP">GBP (£)</option>
                             </select>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="bankDetails">Bank Details</label>
-                            <textarea id="bankDetails" class="form-control" rows="3"></textarea>
+                            <label for="language">Language</label>
+                            <select id="language" name="language">
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn">Save Billing Information</button>
-                    </form>
-                </div>
-                
-                <!-- Security Section -->
-                <div class="profile-section-block" id="securitySection">
-                    <h2>Security Settings</h2>
-                    <form class="profile-form" id="securityForm">
+                        
                         <div class="form-group">
-                            <label for="currentPassword">Current Password</label>
-                            <input type="password" id="currentPassword" class="form-control">
+                            <label for="timezone">Timezone</label>
+                            <select id="timezone" name="timezone">
+                                <option value="UTC">UTC</option>
+                                <option value="EST">EST</option>
+                                <option value="PST">PST</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="newPassword">New Password</label>
-                            <input type="password" id="newPassword" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirmPassword">Confirm New Password</label>
-                            <input type="password" id="confirmPassword" class="form-control">
-                        </div>
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="twoFactorAuth">
-                            <label for="twoFactorAuth">Enable Two-Factor Authentication</label>
-                        </div>
-                        <button type="submit" class="btn">Update Security Settings</button>
-                    </form>
-                </div>
-                
-                <!-- Notifications Section -->
-                <div class="profile-section-block" id="notificationsSection">
-                    <h2>Notification Preferences</h2>
-                    <form class="profile-form" id="notificationsForm">
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="emailNotifications" checked>
-                            <label for="emailNotifications">Email Notifications</label>
-                        </div>
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="invoiceReminders" checked>
-                            <label for="invoiceReminders">Invoice Reminders</label>
-                        </div>
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="paymentReminders" checked>
-                            <label for="paymentReminders">Payment Reminders</label>
-                        </div>
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="newsletter" checked>
-                            <label for="newsletter">Newsletter</label>
-                        </div>
-                        <button type="submit" class="btn">Save Notification Settings</button>
-                    </form>
-                </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -194,6 +142,6 @@
         </div>
     </footer>
     
-    <script src="profile.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html> 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FB.com/Hasanvlo">
+    <meta name="description" content="Logout from InvoicePro - Thank you for using our free invoice generator tool.">
+    <meta name="keywords" content="invoice generator, logout, sign out, invoice tool">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Logout - InvoicePro Free Invoice Generator">
+    <meta property="og:description" content="Thank you for using InvoicePro. You have been successfully logged out.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hasanvlo.github.io/InvoicePro/logout.html">
+    <title>Logout - InvoicePro Free Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="https://hasanvlo.github.io/InvoicePro/" class="logo"><i>📄</i> InvoicePro</a>
+            <nav>
+                <ul>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/">Home</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/about.html">About Us</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/blog.html">Blog</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/login.html">Login</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/signup.html" class="btn btn-outline">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="breadcrumb container">
+        <a href="https://hasanvlo.github.io/InvoicePro/">Home</a> &gt; <span>Logout</span>
+    </div>
+    
+    <section class="logout-section container">
+        <div class="logout-container">
+            <div class="logout-box">
+                <h1>Logged Out Successfully</h1>
+                <p>Thank you for using InvoicePro. You have been successfully logged out.</p>
+                <div class="logout-actions">
+                    <a href="https://hasanvlo.github.io/InvoicePro/login.html" class="btn btn-primary">Login Again</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container footer-content">
+            <a href="https://hasanvlo.github.io/InvoicePro/" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
+            <div class="footer-links">
+                <a href="https://hasanvlo.github.io/InvoicePro/about.html">About Us</a>
+                <a href="https://hasanvlo.github.io/InvoicePro/blog.html">Blog</a>
+                <a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a>
+                <a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2023 InvoicePro. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Clear user session data
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('userEmail');
+            localStorage.removeItem('userName');
+            
+            // Redirect to home page after 2 seconds
+            setTimeout(function() {
+                window.location.href = 'https://hasanvlo.github.io/InvoicePro/';
+            }, 2000);
+        });
+    </script>
+</body>
+</html> 

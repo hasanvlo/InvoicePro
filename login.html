@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="FB.com/Hasanvlo">
-    <meta name="description" content="Login to InvoicePro - Your trusted free invoice generator tool. Access your account to manage invoices and settings.">
-    <meta name="keywords" content="invoice generator, login, free invoice generator, invoice tool">
+    <meta name="description" content="Login to InvoicePro - Access your account to create and manage professional invoices with our free invoice generator tool.">
+    <meta name="keywords" content="invoice generator, login, account access, invoice management, user login">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Login - InvoicePro Free Invoice Generator">
-    <meta property="og:description" content="Login to your InvoicePro account to manage invoices and settings.">
+    <meta property="og:description" content="Access your account to create and manage professional invoices.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hasanvlo.github.io/InvoicePro/login.html">
     <title>Login - InvoicePro Free Invoice Generator</title>
@@ -36,36 +36,38 @@
         <a href="https://hasanvlo.github.io/InvoicePro/">Home</a> &gt; <span>Login</span>
     </div>
     
-    <div class="auth-container">
-        <div class="auth-box">
-            <h2>Welcome Back</h2>
-            <p class="auth-subtitle">Login to your InvoicePro account to manage your invoices.</p>
-            
-            <form class="auth-form" id="loginForm">
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
+    <section class="auth-section container">
+        <div class="auth-container">
+            <div class="auth-box">
+                <h1>Welcome Back</h1>
+                <p>Login to your InvoicePro account to manage your invoices.</p>
                 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" required>
-                </div>
-                
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Remember me</label>
-                </div>
-                
-                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
                 
                 <div class="auth-links">
-                    <a href="https://hasanvlo.github.io/InvoicePro/forgot-password.html">Forgot Password?</a>
-                    <span>Don't have an account? <a href="https://hasanvlo.github.io/InvoicePro/signup.html">Sign up</a></span>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <p>Don't have an account? <a href="https://hasanvlo.github.io/InvoicePro/signup.html">Sign Up</a></p>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
+    </section>
     
     <footer>
         <div class="container footer-content">

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="FB.com/Hasanvlo">
-    <meta name="description" content="Sign up for InvoicePro - Create your free account to start generating professional invoices online.">
-    <meta name="keywords" content="invoice generator, sign up, free invoice generator, invoice tool">
+    <meta name="description" content="Sign up for InvoicePro - Create your free account to start generating professional invoices with our invoice generator tool.">
+    <meta name="keywords" content="invoice generator, sign up, create account, invoice management, free invoice tool">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Sign Up - InvoicePro Free Invoice Generator">
-    <meta property="og:description" content="Create your free InvoicePro account to start generating professional invoices.">
+    <meta property="og:description" content="Create your free account to start generating professional invoices.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hasanvlo.github.io/InvoicePro/signup.html">
     <title>Sign Up - InvoicePro Free Invoice Generator</title>
@@ -26,7 +26,7 @@
                     <li><a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a></li>
                     <li><a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a></li>
                     <li><a href="https://hasanvlo.github.io/InvoicePro/login.html">Login</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/signup.html" class="btn btn-outline active">Sign Up</a></li>
+                    <li><a href="https://hasanvlo.github.io/InvoicePro/signup.html" class="active btn btn-outline">Sign Up</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,45 +36,47 @@
         <a href="https://hasanvlo.github.io/InvoicePro/">Home</a> &gt; <span>Sign Up</span>
     </div>
     
-    <div class="auth-container">
-        <div class="auth-box">
-            <h2>Create an Account</h2>
-            <p class="auth-subtitle">Join InvoicePro to start creating professional invoices.</p>
-            
-            <form class="auth-form" id="signupForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" class="form-control" required>
-                </div>
+    <section class="auth-section container">
+        <div class="auth-container">
+            <div class="auth-box">
+                <h1>Create Your Account</h1>
+                <p>Join InvoicePro to start creating professional invoices today.</p>
                 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="form-control" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" class="form-control" required>
-                </div>
-                
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="terms" required>
-                    <label for="terms">I agree to the <a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a> and <a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a></label>
-                </div>
-                
-                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a> and <a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
                 
                 <div class="auth-links">
-                    <span>Already have an account? <a href="https://hasanvlo.github.io/InvoicePro/login.html">Login</a></span>
+                    <p>Already have an account? <a href="https://hasanvlo.github.io/InvoicePro/login.html">Login</a></p>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
+    </section>
     
     <footer>
         <div class="container footer-content">
