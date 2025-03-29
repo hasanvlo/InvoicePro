@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="FB.com/Hasanvlo">
-    <meta name="description" content="InvoicePro Profile - Manage your account settings, company details, and invoice preferences.">
-    <meta name="keywords" content="invoice generator, profile settings, account management, invoice preferences">
+    <meta name="description" content="Manage your InvoicePro account settings and preferences.">
+    <meta name="keywords" content="invoice generator, profile settings, account management, invoice tool">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Profile Settings - InvoicePro Free Invoice Generator">
-    <meta property="og:description" content="Manage your account settings and invoice preferences.">
+    <meta property="og:description" content="Manage your InvoicePro account settings and preferences.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hasanvlo.github.io/InvoicePro/profile.html">
     <title>Profile Settings - InvoicePro Free Invoice Generator</title>
@@ -17,23 +17,23 @@
 <body>
     <header>
         <div class="container header-content">
-            <a href="https://hasanvlo.github.io/InvoicePro/" class="logo"><i>📄</i> InvoicePro</a>
+            <a href="index.html" class="logo"><i>📄</i> InvoicePro</a>
             <nav>
                 <ul>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/">Home</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/about.html">About Us</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/blog.html">Blog</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/profile.html" class="active">Profile</a></li>
-                    <li><a href="https://hasanvlo.github.io/InvoicePro/logout.html" class="btn btn-outline">Logout</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="logout.html" class="btn btn-outline">Logout</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <div class="breadcrumb container">
-        <a href="https://hasanvlo.github.io/InvoicePro/">Home</a> &gt; <span>Profile Settings</span>
+        <a href="index.html">Home</a> &gt; <span>Profile Settings</span>
     </div>
     
     <section class="profile-section container">
@@ -49,50 +49,41 @@
             </div>
             
             <div class="profile-content">
-                <div class="profile-header">
-                    <h1>Profile Settings</h1>
-                    <p>Manage your account information and preferences</p>
-                </div>
-                
                 <form id="profileForm" class="profile-form">
-                    <div class="form-section">
-                        <h2>Personal Information</h2>
+                    <div class="form-section" id="profile">
+                        <h2>Profile Settings</h2>
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
                             <input type="text" id="fullName" name="fullName" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone">
                         </div>
                     </div>
                     
-                    <div class="form-section">
+                    <div class="form-section" id="company">
                         <h2>Company Details</h2>
                         <div class="form-group">
                             <label for="companyName">Company Name</label>
                             <input type="text" id="companyName" name="companyName">
                         </div>
-                        
                         <div class="form-group">
                             <label for="address">Address</label>
-                            <textarea id="address" name="address" rows="3"></textarea>
+                            <textarea id="address" name="address"></textarea>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="taxNumber">Tax Number</label>
-                            <input type="text" id="taxNumber" name="taxNumber">
+                            <label for="taxId">Tax ID</label>
+                            <input type="text" id="taxId" name="taxId">
                         </div>
                     </div>
                     
-                    <div class="form-section">
-                        <h2>Invoice Preferences</h2>
+                    <div class="form-section" id="billing">
+                        <h2>Billing Information</h2>
                         <div class="form-group">
                             <label for="currency">Default Currency</label>
                             <select id="currency" name="currency">
@@ -101,23 +92,41 @@
                                 <option value="GBP">GBP (£)</option>
                             </select>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="language">Language</label>
+                            <label for="language">Preferred Language</label>
                             <select id="language" name="language">
                                 <option value="en">English</option>
                                 <option value="es">Spanish</option>
                                 <option value="fr">French</option>
                             </select>
                         </div>
-                        
+                    </div>
+                    
+                    <div class="form-section" id="security">
+                        <h2>Security Settings</h2>
                         <div class="form-group">
-                            <label for="timezone">Timezone</label>
-                            <select id="timezone" name="timezone">
-                                <option value="UTC">UTC</option>
-                                <option value="EST">EST</option>
-                                <option value="PST">PST</option>
-                            </select>
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" id="currentPassword" name="currentPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword" name="newPassword">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
+                    </div>
+                    
+                    <div class="form-section" id="notifications">
+                        <h2>Notification Preferences</h2>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="emailNotifications" name="emailNotifications">
+                            <label for="emailNotifications">Email Notifications</label>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="invoiceReminders" name="invoiceReminders">
+                            <label for="invoiceReminders">Invoice Reminders</label>
                         </div>
                     </div>
                     
@@ -131,17 +140,55 @@
     
     <footer>
         <div class="container footer-content">
-            <a href="https://hasanvlo.github.io/InvoicePro/" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
+            <a href="index.html" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
             <div class="footer-links">
-                <a href="https://hasanvlo.github.io/InvoicePro/about.html">About Us</a>
-                <a href="https://hasanvlo.github.io/InvoicePro/blog.html">Blog</a>
-                <a href="https://hasanvlo.github.io/InvoicePro/privacy.html">Privacy Policy</a>
-                <a href="https://hasanvlo.github.io/InvoicePro/terms.html">Terms of Service</a>
+                <a href="about.html">About Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
             <p class="copyright">© 2023 InvoicePro. All rights reserved.</p>
         </div>
     </footer>
     
     <script src="auth.js"></script>
+    <script>
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+            if (!isLoggedIn) {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Load user data
+            const userEmail = localStorage.getItem('userEmail');
+            const userName = localStorage.getItem('userName');
+            
+            // Populate form fields
+            document.getElementById('email').value = userEmail || '';
+            document.getElementById('fullName').value = userName || '';
+            
+            // Handle form submission
+            const profileForm = document.getElementById('profileForm');
+            if (profileForm) {
+                profileForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Save updated profile data
+                    const formData = new FormData(profileForm);
+                    const profileData = {};
+                    formData.forEach((value, key) => {
+                        profileData[key] = value;
+                    });
+                    
+                    // Store in localStorage
+                    localStorage.setItem('profileData', JSON.stringify(profileData));
+                    
+                    alert('Profile updated successfully!');
+                });
+            }
+        });
+    </script>
 </body>
 </html> 

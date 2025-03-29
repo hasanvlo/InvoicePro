@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('userEmail', email);
             
             // Redirect to profile page
-            window.location.href = 'https://hasanvlo.github.io/InvoicePro/profile.html';
+            window.location.href = 'profile.html';
         });
     }
     
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('userName', fullName);
             
             // Redirect to profile page
-            window.location.href = 'https://hasanvlo.github.io/InvoicePro/profile.html';
+            window.location.href = 'profile.html';
         });
     }
     
@@ -68,14 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add profile link if not exists
                 if (!nav.querySelector('a[href*="profile.html"]')) {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="https://hasanvlo.github.io/InvoicePro/profile.html">Profile</a>`;
+                    li.innerHTML = `<a href="profile.html">Profile</a>`;
                     nav.appendChild(li);
                 }
                 
                 // Add logout link if not exists
                 if (!nav.querySelector('a[href*="logout.html"]')) {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="https://hasanvlo.github.io/InvoicePro/logout.html" class="btn btn-outline">Logout</a>`;
+                    li.innerHTML = `<a href="logout.html" class="btn btn-outline">Logout</a>`;
                     nav.appendChild(li);
                 }
             } else {
