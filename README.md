@@ -18,7 +18,7 @@ A professional and feature-rich invoice generator web application that allows us
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/invoice-generator.git
+git clone https://github.com/hasanvlo/InvoicePro.git
 ```
 
 2. Open `index.html` in your web browser to start using the application.
