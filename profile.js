@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Profile Navigation
     const profileMenu = document.querySelector('.profile-menu');
-    const profileSections = document.querySelectorAll('.profile-section');
+    const profileSections = document.querySelectorAll('.profile-section-block');
     
     if (profileMenu) {
         profileMenu.addEventListener('click', function(e) {
