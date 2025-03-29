@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - InvoicePro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><i>📄</i> InvoicePro</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Create an Account</h2>
+            <p class="auth-subtitle">Join InvoicePro to start creating professional invoices.</p>
+            
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control" required>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a></label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                
+                <div class="auth-links">
+                    <span>Already have an account? <a href="/login">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <a href="/" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
+            <div class="footer-links">
+                <a href="/about">About Us</a>
+                <a href="/blog">Blog</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2023 InvoicePro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html> 

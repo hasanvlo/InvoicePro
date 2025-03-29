@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - InvoicePro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><i>📄</i> InvoicePro</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/profile" class="active">Profile</a></li>
+                    <li><a href="/logout" class="btn btn-outline">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-sidebar">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="" alt="Profile Picture" id="profilePicture">
+                        <button class="btn btn-outline btn-sm" onclick="document.getElementById('avatarInput').click()">
+                            <i class="fas fa-camera"></i> Change
+                        </button>
+                        <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                    </div>
+                    <h2 id="profileName">User Name</h2>
+                    <p id="profileEmail">user@email.com</p>
+                </div>
+                
+                <div class="profile-menu">
+                    <a href="#profile" class="active">Profile Settings</a>
+                    <a href="#company">Company Details</a>
+                    <a href="#billing">Billing Information</a>
+                    <a href="#security">Security</a>
+                    <a href="#notifications">Notifications</a>
+                </div>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-section" id="profileSection">
+                    <h3>Profile Settings</h3>
+                    <form class="profile-form" id="profileForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+                
+                <div class="profile-section" id="companySection">
+                    <h3>Company Details</h3>
+                    <form class="profile-form" id="companyForm">
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="companyLogo">Company Logo</label>
+                            <div class="logo-upload">
+                                <img src="" alt="Company Logo" id="companyLogoPreview" style="display: none;">
+                                <input type="file" id="companyLogoInput" class="form-control" accept="image/*">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="companyAddress">Company Address</label>
+                            <textarea id="companyAddress" class="form-control" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="taxNumber">Tax Number</label>
+                            <input type="text" id="taxNumber" class="form-control">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Save Company Details</button>
+                    </form>
+                </div>
+                
+                <div class="profile-section" id="billingSection">
+                    <h3>Billing Information</h3>
+                    <form class="profile-form" id="billingForm">
+                        <div class="form-group">
+                            <label for="billingAddress">Billing Address</label>
+                            <textarea id="billingAddress" class="form-control" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="paymentMethod">Preferred Payment Method</label>
+                            <select id="paymentMethod" class="select-control">
+                                <option value="bank">Bank Transfer</option>
+                                <option value="credit">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bankDetails">Bank Details</label>
+                            <textarea id="bankDetails" class="form-control" rows="3" placeholder="Bank Name, Account Number, IBAN, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Save Billing Information</button>
+                    </form>
+                </div>
+                
+                <div class="profile-section" id="securitySection">
+                    <h3>Security Settings</h3>
+                    <form class="profile-form" id="securityForm">
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" id="currentPassword" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" id="confirmPassword" class="form-control">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="twoFactor">
+                            <label for="twoFactor">Enable Two-Factor Authentication</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Update Security Settings</button>
+                    </form>
+                </div>
+                
+                <div class="profile-section" id="notificationsSection">
+                    <h3>Notification Preferences</h3>
+                    <form class="profile-form" id="notificationsForm">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="emailNotifications" checked>
+                            <label for="emailNotifications">Email Notifications</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="invoiceReminders" checked>
+                            <label for="invoiceReminders">Invoice Reminders</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="paymentReminders" checked>
+                            <label for="paymentReminders">Payment Reminders</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="marketingEmails">
+                            <label for="marketingEmails">Marketing Emails</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Save Notification Settings</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <a href="/" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
+            <div class="footer-links">
+                <a href="/about">About Us</a>
+                <a href="/blog">Blog</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2023 InvoicePro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html> 

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FB.com/Hasanvlo">
+    <meta name="description" content="Free invoice generator tool - Create professional invoices online. A great alternative to Zoho, with no registration required. Generate invoices instantly with our easy-to-use invoice generator.">
+    <meta name="keywords" content="free invoice generator, invoice generator, invoice generator tool, zoho alternative, online invoice generator, professional invoice generator, invoice maker, invoice creator, invoice template, invoice software">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Free Invoice Generator - Professional Invoice Tool">
+    <meta property="og:description" content="Create professional invoices online with our free invoice generator. No registration required. A great alternative to Zoho.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://invoicepro.com">
+    <title>Free Invoice Generator - Professional Invoice Tool</title>
+    <link rel="canonical" href="https://yourdomain.com/invoice-generator">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><i>📄</i> InvoicePro</a>
+            <nav>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/login" class="btn btn-outline">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="breadcrumb container">
+        <a href="/">Home</a> &gt; <span>Invoice Generator</span>
+    </div>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Advanced Invoice Generator</h1>
+            <p>Create professional invoices in minutes with our free online invoice generator. Customize templates, add your branding, and send to clients.</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <!-- Top Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <div class="invoice-tool">
+            <div class="tool-sidebar">
+                <div class="sidebar-section">
+                    <h3><i>⚙️</i> Invoice Settings</h3>
+                    <div class="form-group">
+                        <label for="invoiceType">Invoice Type</label>
+                        <select id="invoiceType" class="select-control">
+                            <option value="standard">Standard Invoice</option>
+                            <option value="proforma">Proforma Invoice</option>
+                            <option value="recurring">Recurring Invoice</option>
+                            <option value="credit">Credit Note</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="invoiceNumber">Invoice Number</label>
+                        <input type="text" id="invoiceNumber" class="form-control" value="INV-2025-001" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="invoiceDate">Invoice Date</label>
+                        <input type="date" id="invoiceDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+                        <input type="date" id="dueDate" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="currency">Currency</label>
+                        <select id="currency" class="select-control">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                            <option value="KRW">KRW - South Korean Won</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                            <option value="BDT">BDT - Bangladeshi Taka</option>
+                            <option value="SGD">SGD - Singapore Dollar</option>
+                            <option value="MYR">MYR - Malaysian Ringgit</option>
+                            <option value="THB">THB - Thai Baht</option>
+                            <option value="IDR">IDR - Indonesian Rupiah</option>
+                            <option value="PHP">PHP - Philippine Peso</option>
+                            <option value="VND">VND - Vietnamese Dong</option>
+                            <option value="HKD">HKD - Hong Kong Dollar</option>
+                            <option value="TWD">TWD - Taiwan Dollar</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select id="language" class="select-control">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="pt">Portuguese</option>
+                            <option value="ru">Russian</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="zh">Chinese</option>
+                            <option value="hi">Hindi</option>
+                            <option value="ar">Arabic</option>
+                            <option value="th">Thai</option>
+                            <option value="vi">Vietnamese</option>
+                            <option value="id">Indonesian</option>
+                            <option value="ms">Malay</option>
+                            <option value="tl">Filipino</option>
+                            <option value="bn">Bengali</option>
+                            <option value="tr">Turkish</option>
+                            <option value="nl">Dutch</option>
+                            <option value="pl">Polish</option>
+                            <option value="uk">Ukrainian</option>
+                            <option value="el">Greek</option>
+                            <option value="he">Hebrew</option>
+                            <option value="fa">Persian</option>
+                            <option value="ur">Urdu</option>
+                            <option value="ta">Tamil</option>
+                            <option value="te">Telugu</option>
+                            <option value="si">Sinhala</option>
+                            <option value="my">Burmese</option>
+                            <option value="km">Khmer</option>
+                            <option value="lo">Lao</option>
+                            <option value="mn">Mongolian</option>
+                            <option value="ne">Nepali</option>
+                            <option value="ka">Georgian</option>
+                            <option value="am">Amharic</option>
+                            <option value="sw">Swahili</option>
+                            <option value="zu">Zulu</option>
+                            <option value="af">Afrikaans</option>
+                            <option value="sv">Swedish</option>
+                            <option value="da">Danish</option>
+                            <option value="fi">Finnish</option>
+                            <option value="no">Norwegian</option>
+                            <option value="is">Icelandic</option>
+                            <option value="hu">Hungarian</option>
+                            <option value="cs">Czech</option>
+                            <option value="ro">Romanian</option>
+                            <option value="sk">Slovak</option>
+                            <option value="hr">Croatian</option>
+                            <option value="sr">Serbian</option>
+                            <option value="sl">Slovenian</option>
+                            <option value="et">Estonian</option>
+                            <option value="lv">Latvian</option>
+                            <option value="lt">Lithuanian</option>
+                            <option value="bg">Bulgarian</option>
+                            <option value="mk">Macedonian</option>
+                            <option value="sq">Albanian</option>
+                            <option value="hy">Armenian</option>
+                            <option value="az">Azerbaijani</option>
+                            <option value="eu">Basque</option>
+                            <option value="be">Belarusian</option>
+                            <option value="bs">Bosnian</option>
+                            <option value="ca">Catalan</option>
+                            <option value="cy">Welsh</option>
+                            <option value="ga">Irish</option>
+                            <option value="gl">Galician</option>
+                            <option value="is">Icelandic</option>
+                            <option value="lb">Luxembourgish</option>
+                            <option value="mt">Maltese</option>
+                            <option value="gd">Scottish Gaelic</option>
+                            <option value="lb">Luxembourgish</option>
+                            <option value="lb">Luxembourgish</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="taxRate">Tax Rate (%)</label>
+                        <input type="number" id="taxRate" class="form-control" value="20" min="0" max="100">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="taxInclusive">
+                        <label for="taxInclusive">Prices include tax</label>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3><i>🎨</i> Template</h3>
+                    <div class="template-preview" id="templatePreview">
+                        <p>Select a template</p>
+                    </div>
+                    <div class="template-options">
+                        <div class="template-option active" data-template="simple">
+                            Simple
+                        </div>
+                        <div class="template-option" data-template="modern">
+                            Modern
+                        </div>
+                        <div class="template-option" data-template="elegant">
+                            Elegant
+                        </div>
+                        <div class="template-option" data-template="minimal">
+                            Minimal
+                        </div>
+                        <div class="template-option" data-template="corporate">
+                            Corporate
+                        </div>
+                        <div class="template-option" data-template="creative">
+                            Creative
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label for="companyLogo">Upload Logo</label>
+                        <input type="file" id="companyLogo" class="form-control" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="primaryColor">Primary Color</label>
+                        <input type="color" id="primaryColor" class="form-control" value="#4a6bff" style="height: 40px; padding: 0.2rem;">
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3><i>🔒</i> Security & Compliance</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="enableEncryption" checked>
+                        <label for="enableEncryption">Enable Data Encryption</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="gdprCompliant" checked>
+                        <label for="gdprCompliant">GDPR Compliant</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="taxCompliant" checked>
+                        <label for="taxCompliant">Tax Compliant</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tool-main">
+                <div class="form-group">
+                    <label for="fromName">From (Your Business)</label>
+                    <input type="text" id="fromName" class="form-control" placeholder="Your Business Name">
+                </div>
+                <div class="form-group">
+                    <label for="fromAddress">Business Address</label>
+                    <textarea id="fromAddress" class="form-control" rows="3" placeholder="Street, City, Country, Postal Code"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fromEmail">Email</label>
+                    <input type="email" id="fromEmail" class="form-control" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="fromPhone">Phone</label>
+                    <input type="tel" id="fromPhone" class="form-control" placeholder="+1 (123) 456-7890">
+                </div>
+                
+                <div class="form-group">
+                    <label for="toName">Bill To (Client)</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <input type="text" id="toName" class="form-control" placeholder="Client Name" style="flex: 1;">
+                        <button class="btn btn-outline" id="aiFillBtn" style="white-space: nowrap;">AI Fill</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="toAddress">Client Address</label>
+                    <textarea id="toAddress" class="form-control" rows="3" placeholder="Street, City, Country, Postal Code"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="toEmail">Client Email</label>
+                    <input type="email" id="toEmail" class="form-control" placeholder="client@email.com">
+                </div>
+                
+                <h3 style="margin: 1.5rem 0 1rem;">Items</h3>
+                <button class="btn btn-outline add-item-btn" id="addItemBtn">+ Add Item</button>
+                <table class="items-table" id="itemsTable">
+                    <thead>
+                        <tr>
+                            <th width="5%">#</th>
+                            <th width="40%">Description</th>
+                            <th width="15%">Quantity</th>
+                            <th width="15%">Price</th>
+                            <th width="15%">Amount</th>
+                            <th width="10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemsBody">
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" class="form-control item-desc" placeholder="Item description"></td>
+                            <td><input type="number" class="form-control item-qty" value="1" min="1"></td>
+                            <td><input type="number" class="form-control item-price" value="0" min="0" step="0.01"></td>
+                            <td class="item-amount">$0.00</td>
+                            <td class="item-actions"><button class="btn btn-danger" style="padding: 0.3rem 0.5rem;">×</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" class="form-control" rows="3" placeholder="Thank you for your business!"></textarea>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-outline" id="previewBtn">Preview Invoice</button>
+                    <button class="btn" id="saveBtn">Save Invoice</button>
+                    <button class="btn btn-success" id="sendBtn">Send to Client</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Invoice Preview Modal -->
+        <div class="modal" id="previewModal">
+            <div class="modal-content">
+                <span class="modal-close" id="modalClose">&times;</span>
+                <h2 class="modal-title">Invoice Preview</h2>
+                <div class="invoice-preview" id="invoicePreview">
+                    <div class="invoice-header">
+                        <div class="invoice-title">INVOICE</div>
+                        <img src="" alt="Company Logo" class="invoice-logo" id="previewLogo" style="display: none;">
+                    </div>
+                    
+                    <div class="invoice-meta">
+                        <div class="invoice-from">
+                            <h3 id="previewFromName">Your Business Name</h3>
+                            <p id="previewFromAddress">123 Business St<br>City, Country<br>Postal Code</p>
+                            <p id="previewFromEmail">your@email.com</p>
+                            <p id="previewFromPhone">+1 (123) 456-7890</p>
+                        </div>
+                        
+                        <div class="invoice-details">
+                            <p><strong>Invoice #:</strong> <span id="previewInvoiceNumber">INV-2023-001</span></p>
+                            <p><strong>Date:</strong> <span id="previewInvoiceDate">January 1, 2023</span></p>
+                            <p><strong>Due Date:</strong> <span id="previewDueDate">January 15, 2023</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="invoice-to" style="margin-bottom: 2rem;">
+                        <h3>Bill To:</h3>
+                        <p id="previewToName">Client Name</p>
+                        <p id="previewToAddress">123 Client St<br>City, Country<br>Postal Code</p>
+                        <p id="previewToEmail">client@email.com</p>
+                    </div>
+                    
+                    <table class="invoice-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Description</th>
+                                <th class="text-right">Quantity</th>
+                                <th class="text-right">Unit Price</th>
+                                <th class="text-right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="previewItemsBody">
+                            <tr>
+                                <td>1</td>
+                                <td>Sample Item</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">$100.00</td>
+                                <td class="text-right">$100.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-right"><strong>Subtotal</strong></td>
+                                <td class="text-right" id="previewSubtotal">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right"><strong>Tax (20%)</strong></td>
+                                <td class="text-right" id="previewTax">$20.00</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td colspan="4" class="text-right"><strong>Total</strong></td>
+                                <td class="text-right" id="previewTotal">$120.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    <div class="invoice-notes">
+                        <h3>Notes</h3>
+                        <p id="previewNotes">Thank you for your business!</p>
+                    </div>
+                    
+                    <div class="invoice-footer">
+                        <div>
+                            <h3>Signature</h3>
+                            <div class="signature-placeholder" id="signaturePlaceholder">
+                                Click to add signature
+                            </div>
+                            <img src="" alt="Signature" class="signature-preview" id="signaturePreview" style="display: none;">
+                        </div>
+                        
+                        <div class="invoice-details">
+                            <p><strong>Payment Terms:</strong> Net 15</p>
+                            <p><strong>Payment Methods:</strong> Bank Transfer, Credit Card</p>
+                            <p><strong>Bank Details:</strong> IBAN: XX00 XXXX 0000 0000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-outline" id="printBtn">Print Invoice</button>
+                    <button class="btn" id="downloadPdfBtn">Download PDF</button>
+                    <button class="btn btn-success" id="sendEmailBtn">Send via Email</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Signature Modal -->
+        <div class="modal" id="signatureModal">
+            <div class="modal-content">
+                <span class="modal-close" id="signatureModalClose">&times;</span>
+                <h2 class="modal-title">Add Signature</h2>
+                <canvas id="signaturePad" class="signature-pad" width="500" height="200"></canvas>
+                <div class="signature-actions">
+                    <button class="btn btn-danger" id="clearSignatureBtn">Clear</button>
+                    <button class="btn btn-success" id="saveSignatureBtn">Save Signature</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Middle Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose Our Invoice Generator?</h2>
+                <p>Professional invoices made easy with our advanced features</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Customizable Templates</h3>
+                        <p>Choose from multiple professionally designed templates and customize them with your branding.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💱</div>
+                        <h3>Multi-Currency Support</h3>
+                        <p>Create invoices in different currencies with automatic exchange rate calculations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧮</div>
+                        <h3>Automatic Calculations</h3>
+                        <p>Our tool automatically calculates subtotals, taxes, and totals to eliminate errors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI-Powered Features</h3>
+                        <p>Use AI to auto-fill client details, suggest item descriptions, and detect errors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure & Compliant</h3>
+                        <p>All invoices are encrypted and comply with GDPR and tax regulations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📤</div>
+                        <h3>Easy Sharing</h3>
+                        <p>Send invoices directly to clients via email or download in multiple formats.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bottom Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <a href="/" class="logo" style="color: white;"><i>📄</i> InvoicePro</a>
+            <div class="footer-links">
+                <a href="/about">About Us</a>
+                <a href="/blog">Blog</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2023 InvoicePro. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "InvoicePro - Advanced Invoice Generator",
+        "url": "https://yourdomain.com/invoice-generator",
+        "description": "Free online advanced invoice generator with multiple templates, multi-currency support, tax calculation, and e-signatures.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "InvoicePro"
+        }
+    }
+    </script>
+</body>
+</html> 
